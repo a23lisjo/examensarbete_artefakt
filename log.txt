@@ -1,0 +1,4 @@
+=== LOGBOK FÖR ARTEFAKT TILL EXAMENSARBETE ===
+--- 9 Mars 2026 ---
+
+Skapade React och Svelte applikationer. 
