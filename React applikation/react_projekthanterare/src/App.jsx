@@ -1,5 +1,7 @@
-import Navbar from "./componentes/navbar";
+import Navbar from "./components/navbar";
 import Hem from "./pages/Hem/Hem";
+import Projekt from "./pages/Projekt/Projekt";
+
 import { Routes, Route } from "react-router-dom";
 
 function App() {
