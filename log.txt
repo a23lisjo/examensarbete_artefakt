@@ -2,3 +2,13 @@
 --- 9 Mars 2026 ---
 
 Skapade React och Svelte applikationer. 
+#############################################################################
+
+--- 16 Mars 2026 ---
+    - Skapade sidorna "Hem" och "Projekt" tillsammans med en css fil vardera. 
+    - Fixade React-router-dom för att kunna använda komponenter som "<Link>", "<BrowserRouter>" och "<Router>". --> skapa en SPA.
+    - Skapade en navbar komponent som appliceras på alla sidor. 
+        - Lade till styling för denna i index.css.
+    - Ändrade styling på root i index.css
+    - Började en tabell i Projekt.jsx 
+        - Skapade en komponent för ProjektObjekt som ska användas för att kunna göra CRUD operationer på. 
