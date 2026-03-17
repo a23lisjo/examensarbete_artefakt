@@ -1,0 +1,9 @@
+#projektTabell, th{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.projektObjekt{
+    border-collapse: collapse;
+    border: 3px solid black
+}

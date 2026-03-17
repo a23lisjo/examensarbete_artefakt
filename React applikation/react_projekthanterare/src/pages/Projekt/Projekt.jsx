@@ -1,4 +1,6 @@
 import "./Projekt.css"
+import ProjektObjekt from "@/components/ProjektObjekt.jsx";
+
 function Projekt(){
     return(
         <div className="page">
@@ -11,13 +13,27 @@ function Projekt(){
                         <th>Prioritet</th>
                     </tr>
                 </thead>
-                
-
-
+                <tbody>
+                    <ProjektObjekt
+                        namn = "Projekt1"
+                        startDatum = "170326"
+                        slutDatum = "200326"
+                        prioritet = "hög"
+                    />
+                     <ProjektObjekt
+                        namn = "Projekt2"
+                        startDatum = "170326"
+                        slutDatum = "200326"
+                        prioritet = "hög"
+                    />
+                     <ProjektObjekt
+                        namn = "Projekt2"
+                        startDatum = "170326"
+                        slutDatum = "200326"
+                        prioritet = "hög"
+                    />
+                </tbody>
             </table>
-
-
-
         </div>
     )
 }
