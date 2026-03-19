@@ -5,6 +5,7 @@ Skapade React och Svelte applikationer.
 #############################################################################
 
 --- 16 Mars 2026 ---
+[REACT]
     - Skapade sidorna "Hem" och "Projekt" tillsammans med en css fil vardera. 
     - Fixade React-router-dom för att kunna använda komponenter som "<Link>", "<BrowserRouter>" och "<Router>". --> skapa en SPA.
     - Skapade en navbar komponent som appliceras på alla sidor. 
@@ -12,3 +13,31 @@ Skapade React och Svelte applikationer.
     - Ändrade styling på root i index.css
     - Började en tabell i Projekt.jsx 
         - Skapade en komponent för ProjektObjekt som ska användas för att kunna göra CRUD operationer på. 
+
+Kommande:
+[] Fixa ProjektObjekt komponenten
+[] Skapa så att det går att Skapa,radera och uppdatera ett ProjektObjekt
+
+#############################################################################
+
+--- 17 Mars 2026 ---
+[REACT]
+    - Fixade och testade så att ProjektObjekt komponenten fungerar på Projekt sidan. Vilket den gör!
+        - Nästa steg är att fixa så att det går att göra CURD operationer på de 
+
+        1. Skapa ett formulär för att kunna lägga till ett nytt projekt.
+        2. Skapa en delete knapp på varje projekt.
+        3. Jag vet inte riktigt hur jag har tänkt att uppdatera funktionen ska kunna automatiseras så den ska jag vänta lite med. 
+
+Kommande:
+[x] Fixa ProjektObjekt komponenten
+[] Skapa så att det går att Skapa,radera och uppdatera ett ProjektObjekt
+
+#############################################################################
+
+--- 19 Mars 2026 ---
+[REACT]
+    - Skapade en komponent för ett formulär för att kunna lägga till projekt objekt till tabellen.
+Kommande:
+[] Koppla ihop formuläret med komponenten.
+[] Skapa så att det går att Skapa,radera och uppdatera ett ProjektObjekt
