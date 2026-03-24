@@ -1,0 +1,4 @@
+#templatePage{
+    display: grid;
+    grid-template-columns: 10vw auto;
+}
