@@ -1,9 +1,50 @@
-#projektTabell, th{
-    border: 2px solid black;
+.page{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    margin: 20px;
+    border-radius: 1%;
+}
+
+#projektTabell{
     border-collapse: collapse;
+    margin-top: 1em;
+}
+
+th{
+    border: 1px solid rgb(84, 84, 84);
+    background-color: #d7d9ff;
+    color:#646cff;
+}
+
+tr:nth-child(even) {background-color: #e8e8e8;
+}
+tr:hover{
+    background-color: #adadad;
 }
 
 .projektObjekt{
     border-collapse: collapse;
-    border: 3px solid black
+    border: 1px solid rgb(100, 100, 100)
+}
+
+#objektFormSubmitButton{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+#pageTitle{
+    color:#3038d6;
+}
+
+#addProjektSection{
+    border: 1px grey solid;
+    box-shadow: 5px 5px #d7d9ff;
+    padding: 1em;
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
 }
