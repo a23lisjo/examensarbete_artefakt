@@ -41,3 +41,13 @@ Kommande:
 Kommande:
 [] Koppla ihop formuläret med komponenten.
 [] Skapa så att det går att Skapa,radera och uppdatera ett ProjektObjekt
+
+#############################################################################
+
+--- 23 Mars 2026 ---
+[REACT]
+    - Fixade grid på applikationen och övrig design
+Kommande:
+[] Koppla ihop formuläret med komponenten.
+[] Skapa så att det går att Skapa,radera och uppdatera ett ProjektObjekt
+
