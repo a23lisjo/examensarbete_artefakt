@@ -51,3 +51,24 @@ Kommande:
 [] Koppla ihop formuläret med komponenten.
 [] Skapa så att det går att Skapa,radera och uppdatera ett ProjektObjekt
 
+#############################################################################
+
+--- 25 Mars 2026 ---
+[SVELTE]
+    - Skapade ett SvelteKit projekt: Många guider och tutorials menade att SvelteKit gör det lättare
+        ifall jag vill skapa en SPA med routing osv. Jag har även hittat att det verkar som att de hanterar
+        formulär men har inte läst på ordentligt för att säga om det är sant! 
+    - Fixade så att projektet skulle hantera navigation som en SPA.
+        1. Lade till +layout.js fil lade till kodraden: "export const ssr = false;" för att stänga av SSR.
+        2. installerade "@sveltejs/adapter-auto" i terminalen 
+        3. uppdaterade filen "svelte.config.js" med:
+            "import adapter from '@sveltejs/adapter-auto';" och med en fallback som endast har betydelse vid hosting,
+            så jag skulle kunnat strunta i det. 
+
+Kommande:
+[] [REACT] Koppla ihop formuläret med komponenten.
+[] [REACT] Skapa så att det går att Skapa,radera och uppdatera ett ProjektObjekt
+[] [SVELTE] Fixa projekt sidan - skapa tabell 
+[] [SVELTE] Skapa formulär komponent
+[] [SVELTE] Skapa projekt objekt komponent
+
