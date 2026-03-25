@@ -1,0 +1,24 @@
+ <nav class="navbar">
+    <a href="/" class="navbutton">Hem</a>
+    <a href="/projekt" class="navbutton">Projekt</a>
+</nav>
+
+<style>
+    .navbar{
+    display: flex;
+    flex-direction: column;
+    color:#ffffff;
+    }
+
+    .navbutton {
+    font-weight: 500;
+    background-color:#646cff;
+    color: blanchedalmond;
+    text-decoration: inherit;
+    padding:20%;
+    }
+    .navbutton:hover {
+    color: #535bf2;
+    background-color:#353baa;
+    }
+</style>
