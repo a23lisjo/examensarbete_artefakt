@@ -15,7 +15,7 @@ To recreate this project with the same configuration:
 
 ```sh
 # recreate this project
-npx sv@0.13.0 create --template minimal --types jsdoc --add prettier --install npm svelte_projekthanterare
+npx sv@0.13.0 create --template minimal --no-types --add prettier --install npm svelte_projekthanterare
 ```
 
 ## Developing
