@@ -4,4 +4,17 @@ body{
     display: grid;
     grid-template-columns: 10vw auto;
     background-color: blanchedalmond;
+        font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
+
+.page{
+    background-color: white;
+    padding: 2em;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
