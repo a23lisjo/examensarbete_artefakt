@@ -9,7 +9,6 @@
   display: flex;
   flex-direction: column;
   color:#ffffff;
-  width: 20%;
 }
 
 .navbutton {
@@ -35,21 +34,23 @@ h1 {
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  border: 2px solid rgb(167, 167, 167);
+  font-size: 0.7em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: white;
+  color:black;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
   border-color: #646cff;
+  background-color:#d7d9ff;
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 4px auto #353baa;
+  background-color:#d7d9ff;
 }
 
 @media (prefers-color-scheme: light) {
