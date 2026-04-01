@@ -72,3 +72,29 @@ Kommande:
 [] [SVELTE] Skapa formulär komponent
 [] [SVELTE] Skapa projekt objekt komponent
 
+#############################################################################
+
+--- 1 April 2026 ---
+[SVELTE]
+    - Fixade grid för hela applikationen
+    - Lade till props för ProjektObjekt.svelte för att testa att lägga in data manuellt 
+        (allt inom <script> tagg)
+
+[BÅDA]
+    - Fixade styling 
+
+Kommande:
+[x] [REACT] Koppla ihop formuläret med komponenten.
+[->] [REACT] Skapa så att det går att Skapa,radera och uppdatera ett ProjektObjekt
+[x] [SVELTE] Fixa projekt sidan - skapa tabell 
+[x] [SVELTE] Skapa formulär komponent
+[x] [SVELTE] Skapa projekt objekt komponent
+[] [BÅDA] Kunna skicka data mellan formulär och tabell
+
+#############################################################################
+
+---  April 2026 ---
+
+
+Kommande:
+[] [BÅDA] Kunna skicka data mellan formulär och tabell
