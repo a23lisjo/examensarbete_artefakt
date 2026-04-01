@@ -1,6 +1,7 @@
  <script>
     import Navbar from '$lib/components/Navbar.svelte';
     import ObjektForm from '$lib/components/ObjektForm.svelte';
+    import ProjektObjekt from '$lib/components/ProjektObjekt.svelte';
 
  </script>
 
@@ -21,6 +22,7 @@
             </tr>
         </thead>
         <tbody>
+            <ProjektObjekt namn="Projekt1" startDatum="010426" slutDatum="040426" prioritet="Låg" />
 
         </tbody>
     </table>
@@ -28,9 +30,16 @@
 </div>
 
 <style>
-    #projektTabell{
+#pageTitle{
+    color:#3038d6;
+}
+
+#projektTabell{
     border-collapse: collapse;
     margin-top: 1em;
+}
+table{
+    width: 100%;
 }
 
 th{
@@ -43,10 +52,6 @@ tr:nth-child(even) {background-color: #e8e8e8;
 }
 tr:hover{
     background-color: #adadad;
-}
-
-#pageTitle{
-    color:#3038d6;
 }
 
 #addProjektSection{
