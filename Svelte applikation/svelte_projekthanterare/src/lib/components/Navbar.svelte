@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     color:#ffffff;
+    height: 10%;
     }
 
     .navbutton {
