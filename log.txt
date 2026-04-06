@@ -82,6 +82,8 @@ Kommande:
 
 [BÅDA]
     - Fixade styling 
+        - "Lägg till" knapp
+        - Lade till "page" div för landningssidorna
 
 Kommande:
 [x] [REACT] Koppla ihop formuläret med komponenten.
@@ -93,8 +95,12 @@ Kommande:
 
 #############################################################################
 
----  April 2026 ---
-
+--- 6 April 2026 ---
+    - [BÅDA] Installerade JSON-server med "npm install json-server". Gjorde detta i 
+        båda projekten så att de fick en "json-server" var i filen "package.json".
+    - [BÅDA] Skapade en databas fil i json för båda projekten "db.json"
+        För att starta json-server : "npx json-server db.json"
 
 Kommande:
 [] [BÅDA] Kunna skicka data mellan formulär och tabell
+
