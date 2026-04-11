@@ -134,4 +134,44 @@ Kommande:
 Kommande:
 [x] [REACT] Kunna skicka data mellan formulär och tabell
 [] [SVELTE] Kunna skicka data mellan formulär och tabell
-[] [REACT] Koppla JSON db med projektet för att kunna lägga till och hämta data
+[x] [REACT] Koppla JSON db med projektet för att kunna lägga till och hämta data
+
+#############################################################################
+
+--- 11 April 2026 ---
+    - [SVELTE] Lade till logik för att kunna skicka data mellan formulär till JSON fil.
+        -> I "ObjektForm" fil
+            - En POST 
+                let name = $state("")
+                let startDatum = $state("")
+                let slutDatum = $state("")
+                let prioritet = $state("default")
+
+                async function handleSubmit () {
+                    const res = await fetch('http://localhost:3000/projekt', {
+                        method: 'POST',
+                        headers: {"Content-Type":"application/json"},
+                        body: JSON.stringify({
+                            name,
+                            startDatum,
+                            slutDatum,
+                            prioritet
+                        })
+                    })
+                    
+                    const json = await res.json()
+                    console.log( name,
+                            startDatum,
+                            slutDatum,
+                            prioritet)
+                }
+            - För varje input lades en bind:value till med respektive variabel (let name = $state(""))
+                för att koppla ihop variabeln med en input:
+
+                bind:value={name}
+            - Funktion "handleSubmit" kallas när <button> blir tryckt:
+                onclick={handleSubmit}
+
+Kommande:
+[x] [SVELTE] Kunna skicka data mellan formulär och JSON fil
+[] [SVELTE] Hämta data från JSON fil till tabell
