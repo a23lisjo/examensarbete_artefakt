@@ -1,22 +1,70 @@
+<script>
+    let name = $state("")
+    let startDatum = $state("")
+    let slutDatum = $state("")
+    let prioritet = $state("default")
+
+    async function handleSubmit () {
+		const res = await fetch('http://localhost:3000/projekt', {
+			method: 'POST',
+            headers: {"Content-Type":"application/json"},
+			body: JSON.stringify({
+                name,
+                startDatum,
+                slutDatum,
+                prioritet
+			})
+		})
+		
+		const json = await res.json()
+        console.log( name,
+                startDatum,
+                slutDatum,
+                prioritet)
+	}
+</script>
+
 <form>
         <label>Namn:
-            <input type="text" placeholder="Projekt namn" />
+            <input 
+                bind:value={name}
+                type="text" 
+                placeholder="Projekt namn" 
+            />
         </label>
         <label>Startdatum:
-            <input type="date" placeholder="Startdatum" />
+            <input 
+                bind:value={startDatum}
+                type="date" 
+                placeholder="Startdatum" 
+            />
         </label>
         <label>Startdatum:
-            <input type="date" placeholder="Slutdatum" />
+            <input 
+                bind:value={slutDatum}
+                type="date" 
+                placeholder="Slutdatum" 
+            />
         </label>
         <label>Prioritet:
-            <select name="priority" id="priority">
-                <option value="high">Hög</option>
-                <option value="medium">Medium</option>
-                <option value="low">Låg</option>
+            <select 
+                bind:value={prioritet}
+                name="priority" 
+                id="priority"
+            >
+                <option value="default">Välj...</option>
+                <option value="Hög">Hög</option>
+                <option value="Medium">Medium</option>
+                <option value="Låg">Låg</option>
             </select>
         </label>
 
-        <button id="objektFormSubmitButton" type="submit">Lägg till</button>
+        <button 
+            onclick={handleSubmit}
+            id="objektFormSubmitButton" 
+            type="submit"
+        >
+        Lägg till</button>
     </form>
 
 
