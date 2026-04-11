@@ -104,3 +104,34 @@ Kommande:
 Kommande:
 [] [BÅDA] Kunna skicka data mellan formulär och tabell
 
+#############################################################################
+
+--- 7 April 2026 ---
+    - [REACT] Använt useState för att skicka data mellan formuläret till tabellen. 
+        -> I "ObjetkForm" 
+            - ändrade funktionen till en const 
+            - Nya rader 3-15
+                - const useState tillåter att sätta data
+                - const handleSubmit tillåter att hantera "lägga till" och skickar data till formuläret.
+            - I formuläret
+                - Alla input fick "onChange", "name" och "value"
+        -> I "Projekt"
+            - Tillagd logik
+                - const useEffect + fetch
+                    -  const handleAdd --> lägger till data i tabellen
+            - För ObjektForm komponenten lades "handleAdd" in.
+            - För td lades:
+                    "{table.map((t, index) => (
+                        <ProjektObjekt 
+                        key={index}
+                        namn={t.namn}
+                        startDatum={t.startDatum}
+                        slutDatum={t.slutDatum}
+                        prioritet={t.prioritet} />
+                    ))} "
+                    till för att koppla td till rätt td (data)
+            
+Kommande:
+[x] [REACT] Kunna skicka data mellan formulär och tabell
+[] [SVELTE] Kunna skicka data mellan formulär och tabell
+[] [REACT] Koppla JSON db med projektet för att kunna lägga till och hämta data

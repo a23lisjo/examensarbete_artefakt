@@ -9,7 +9,5 @@ function ProjektObjekt({namn, startDatum, slutDatum, prioritet}){
             <td className= "projektObjekt">{prioritet}</td>
         </tr>
     )
-   
 }
-
 export default ProjektObjekt;

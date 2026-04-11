@@ -1,13 +1,30 @@
 import "./Projekt.css"
 import ProjektObjekt from "@/components/ProjektObjekt.jsx";
 import ObjektForm from "@/components/ObjektForm.jsx";
-
+import React, {useState, useEffect} from "react"
 function Projekt(){
+    const [table, setTable] = useState([]);
+
+    const handleAdd = (formData) =>{
+        console.log(formData)
+        setTable([...table,formData])
+    }
+    useEffect(()=>{
+        fetch('http://localhost:3000/projekt')
+            .then(res => {
+                return res.json();
+            })
+            .then((data)=> {
+                console.log (data)
+                setTable(data);
+            })
+            
+    }, [])
     return(
         <div className="page">
             <div id="addProjektSection">
                 <h1 id="pageTitle">Projekt</h1>
-                <ObjektForm/>
+                <ObjektForm onSubmit={handleAdd}/>
             </div>
             <table id="projektTabell">
                 <thead>
@@ -19,24 +36,14 @@ function Projekt(){
                     </tr>
                 </thead>
                 <tbody>
-                    <ProjektObjekt
-                        namn = "Projekt1"
-                        startDatum = "170326"
-                        slutDatum = "200326"
-                        prioritet = "hög"
-                    />
-                    <ProjektObjekt
-                        namn = "Projekt2"
-                        startDatum = "170326"
-                        slutDatum = "200326"
-                        prioritet = "hög"
-                    />
-                    <ProjektObjekt
-                        namn = "Projekt3"
-                        startDatum = "170326"
-                        slutDatum = "200326"
-                        prioritet = "hög"
-                    />
+                    {table.map((t, index) => (
+                        <ProjektObjekt 
+                        key={index}
+                        namn={t.namn}
+                        startDatum={t.startDatum}
+                        slutDatum={t.slutDatum}
+                        prioritet={t.prioritet} />
+                    ))}
                 </tbody>
             </table>
         </div>

@@ -1,13 +1,13 @@
 {
-  "posts": [
-    { "id": "1", "title": "a title", "views": 100 },
-    { "id": "3", "title": "another title", "views": 200 }
+  "projekt": [
+    {
+      "namn": "Projekt1",
+      "startDatum": "2026-04-11",
+      "slutDatum": "2026-04-16",
+      "prioritet": "Hög",
+      "id": "CiBd8DZ7ugQ"
+    }
+
   ],
-  "comments": [
-    { "id": "1", "text": "a comment about post 1", "postId": "1" },
-    { "id": "3", "text": "another comment about post 1", "postId": "1" }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "$schema": "./node_modules/json-server/schema.json"
 }
