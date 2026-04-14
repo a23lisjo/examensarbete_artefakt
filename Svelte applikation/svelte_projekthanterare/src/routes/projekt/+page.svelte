@@ -2,7 +2,18 @@
     import Navbar from '$lib/components/Navbar.svelte';
     import ObjektForm from '$lib/components/ObjektForm.svelte';
     import ProjektObjekt from '$lib/components/ProjektObjekt.svelte';
+ 
+    let {data} = $props ();
+    let formLista = $state([])
+    let initialized = false;
 
+    $effect(() => {
+        formLista = data.formLista ?? [];
+    });
+    
+    function addNewTd (jsonData){
+        formLista = [... formLista, jsonData]
+    }
  </script>
 
  <Navbar/>
@@ -10,7 +21,7 @@
  <div class="page">
     <div id="addProjektSection">
         <h1 id="pageTitle">Projekt</h1>
-        <ObjektForm/>
+        <ObjektForm tabellRad={addNewTd}/>
     </div>
     <table id="projektTabell">
         <thead>
@@ -22,8 +33,9 @@
             </tr>
         </thead>
         <tbody>
-            <ProjektObjekt namn="Projekt1" startDatum="010426" slutDatum="040426" prioritet="Låg" />
-
+            {#each formLista as tabellRad}
+                <ProjektObjekt {tabellRad}/>
+            {/each}
         </tbody>
     </table>
     

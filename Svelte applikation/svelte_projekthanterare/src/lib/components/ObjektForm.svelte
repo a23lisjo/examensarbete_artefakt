@@ -1,10 +1,14 @@
 <script>
+    let {tabellRad} = $props()
+
     let name = $state("")
     let startDatum = $state("")
     let slutDatum = $state("")
     let prioritet = $state("default")
 
-    async function handleSubmit () {
+    async function handleSubmit (event) {
+        event.preventDefault();
+        
 		const res = await fetch('http://localhost:3000/projekt', {
 			method: 'POST',
             headers: {"Content-Type":"application/json"},
@@ -16,56 +20,62 @@
 			})
 		})
 		
-		const json = await res.json()
+		const jsonData = await res.json();
+        tabellRad (jsonData);
         console.log( name,
                 startDatum,
                 slutDatum,
                 prioritet)
+
+        // Rensa formulär
+        name = ""
+        startDatum = ""
+        slutDatum = ""
+        prioritet = "default"
 	}
 </script>
 
-<form>
-        <label>Namn:
-            <input 
-                bind:value={name}
-                type="text" 
-                placeholder="Projekt namn" 
-            />
-        </label>
-        <label>Startdatum:
-            <input 
-                bind:value={startDatum}
-                type="date" 
-                placeholder="Startdatum" 
-            />
-        </label>
-        <label>Startdatum:
-            <input 
-                bind:value={slutDatum}
-                type="date" 
-                placeholder="Slutdatum" 
-            />
-        </label>
-        <label>Prioritet:
-            <select 
-                bind:value={prioritet}
-                name="priority" 
-                id="priority"
-            >
-                <option value="default">Välj...</option>
-                <option value="Hög">Hög</option>
-                <option value="Medium">Medium</option>
-                <option value="Låg">Låg</option>
-            </select>
-        </label>
-
-        <button 
-            onclick={handleSubmit}
-            id="objektFormSubmitButton" 
-            type="submit"
+<form  onsubmit={handleSubmit}>
+    <label>Namn:
+        <input 
+            bind:value={name}
+            type="text" 
+            placeholder="Projekt namn" 
+        />
+    </label>
+    <label>Startdatum:
+        <input 
+            bind:value={startDatum}
+            type="date" 
+            placeholder="Startdatum" 
+        />
+    </label>
+    <label>Startdatum:
+        <input 
+            bind:value={slutDatum}
+            type="date" 
+            placeholder="Slutdatum" 
+        />
+    </label>
+    <label>Prioritet:
+        <select 
+            bind:value={prioritet}
+            name="priority" 
+            id="priority"
         >
-        Lägg till</button>
-    </form>
+            <option value="default">Välj...</option>
+            <option value="Hög">Hög</option>
+            <option value="Medium">Medium</option>
+            <option value="Låg">Låg</option>
+        </select>
+    </label>
+
+    <button 
+        id="objektFormSubmitButton" 
+        type="submit"
+    >
+    Lägg till</button>
+</form>
 
 
 <style>
