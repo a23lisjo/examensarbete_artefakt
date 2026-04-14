@@ -107,7 +107,8 @@ Kommande:
 #############################################################################
 
 --- 7 April 2026 ---
-    - [REACT] Använt useState för att skicka data mellan formuläret till tabellen. 
+[REACT] 
+    - Använt useState för att skicka data mellan formuläret till tabellen. 
         -> I "ObjetkForm" 
             - ändrade funktionen till en const 
             - Nya rader 3-15
@@ -139,7 +140,8 @@ Kommande:
 #############################################################################
 
 --- 11 April 2026 ---
-    - [SVELTE] Lade till logik för att kunna skicka data mellan formulär till JSON fil.
+[SVELTE] 
+    - Lade till logik för att kunna skicka data mellan formulär till JSON fil.
         -> I "ObjektForm" fil
             - En POST 
                 let name = $state("")
@@ -175,3 +177,83 @@ Kommande:
 Kommande:
 [x] [SVELTE] Kunna skicka data mellan formulär och JSON fil
 [] [SVELTE] Hämta data från JSON fil till tabell
+
+#############################################################################
+
+--- 13 April 2026 ---
+[SVELTE] 
+    - Började lösa logik för att hämta data och fylla i tabellen 
+        -> I "ObjektForm" komponenten 
+            - lade till:
+                let {tabellRad} = $props() - rad 2
+                event.preventDefault() - rad 10
+                tabellRad(jsonData) - rad 24
+            - Flyttade på handleSubmit funktionen från <button> med onclick till 
+                <form> med en onsubmit={handleSubmit}
+        -> I "ProjektObjekt"
+            - Ändrade från alla value ({}) till ett samlingsnamn för alla td --> tabellRad
+        -> I "page.svelte" (projekt)
+            - Lagt till rad 6-8:
+                let data = $props ();
+                let formLista = $state([])
+                let initialized = false;
+
+            - Lagt till rad 10-15:
+                $effect (() => {
+                    if(!initialized){
+                        formLista = data.formLista ?? [];
+                        initialized=true;
+                    }
+                })
+            - Lagt till rad 17-18:
+                function addNewTd (jsonData){
+                    formLista = [... formLista, jsonData]
+                }
+            - Rad 27: För komponenten "<ObjektForm/>" --> <ObjektForm tabellRad={addNewTd}/>
+            - Rad 39-41:
+                 {#each formLista as tabellRad}
+                    <ProjektObjekt {tabellRad}/>
+                {/each}
+
+        -> page.js:
+            export async function load ({fetch}){
+                console.log("load körs");
+                const res = await fetch ('http://localhost:3000/projekt')
+                const data = await res.json();
+
+                console.log("data:", data)
+                return {
+                    formLista: data
+                };
+            }
+    - Vad fungerar:
+        - Fylla i formulär --> Skicka data till JSON fil -->
+            Data i Json fil fylls i och sparas. 
+    - Vad som inte fungerar:
+        - Hämta befintlig data från JSON fil och fylla i tabell.
+        - Vid omladdning försvinner även den nya data från tabellen.
+Kommande:
+[] [SVELTE] Hämta data från JSON fil till tabell
+
+#############################################################################
+
+--- 14 April 2026 ---
+[SVELTE] 
+    -> I "page.svelte": 
+        - Rad 6: Ändrade från "let data = $props ();" till "let {data} = $props ();"
+        - Rad 10-x: Ändrade från:
+             $effect (() => {
+                if(!initialized){
+                    formLista = data.formLista ?? [];
+                    initialized=true;
+                }
+            })
+        till 
+            $effect(() => {
+                formLista = data.formLista ?? [];
+            });
+    - Dessa ändringar löste att jag inte kunde hämta befintlig data 
+        och att data försvann vid reload av sidan. 
+
+Kommande:
+[x] [SVELTE] Hämta data från JSON fil till tabell
