@@ -1,6 +1,6 @@
  <nav class="navbar">
-    <a href="/" class="navbutton">Hem</a>
-    <a href="/projekt" class="navbutton">Projekt</a>
+    <a href="/" class="navbutton">Home</a>
+    <a href="/projekt" class="navbutton">Projects</a>
 </nav>
 
 <style>

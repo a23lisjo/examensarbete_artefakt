@@ -1,40 +1,42 @@
  <script>
     import Navbar from '$lib/components/Navbar.svelte';
-    import ObjektForm from '$lib/components/ObjektForm.svelte';
-    import ProjektObjekt from '$lib/components/ProjektObjekt.svelte';
+    import Form from '$lib/components/Form.svelte';
+    import TableRow from '$lib/components/TabelRow.svelte';
  
     let {data} = $props ();
-    let formLista = $state([])
+    let formList = $state([])
     let initialized = false;
 
     $effect(() => {
-        formLista = data.formLista ?? [];
+        formList = data.formList ?? [];
     });
     
-    function addNewTd (jsonData){
-        formLista = [... formLista, jsonData]
+    function addNewTr (jsonData){
+        formList = [... formList, jsonData]
     }
  </script>
 
  <Navbar/>
 
  <div class="page">
-    <div id="addProjektSection">
-        <h1 id="pageTitle">Projekt</h1>
-        <ObjektForm tabellRad={addNewTd}/>
+    <div id="addProjectSection">
+        <h1 id="pageTitle">Projects</h1>
+        <Form tRow={addNewTr}/>
     </div>
-    <table id="projektTabell">
+    <table id="projectTable">
         <thead>
             <tr>
-                <th>Projekt namn</th>
-                <th>Startdatum</th>
-                <th>Slutdaturm</th>
-                <th>Prioritet</th>
+                <th>WBS</th>
+                <th>Task</th>
+                <th>Duration</th>
+                <th>Predecessors</th>
+                <th>Successors</th>
+                <th>Budget</th>
             </tr>
         </thead>
         <tbody>
-            {#each formLista as tabellRad}
-                <ProjektObjekt {tabellRad}/>
+            {#each formList as tRow}
+                <TableRow {tRow}/>
             {/each}
         </tbody>
     </table>
@@ -46,7 +48,7 @@
     color:#3038d6;
 }
 
-#projektTabell{
+#projectTable{
     border-collapse: collapse;
     margin-top: 1em;
 }
@@ -66,7 +68,7 @@ tr:hover{
     background-color: #adadad;
 }
 
-#addProjektSection{
+#addProjectSection{
     border: 1px grey solid;
     box-shadow: 5px 5px #d7d9ff;
     padding: 1em;
