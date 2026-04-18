@@ -6,7 +6,7 @@
     border-radius: 1%;
 }
 
-#projektTabell{
+#projectTable{
     border-collapse: collapse;
     margin-top: 1em;
 }
@@ -23,7 +23,7 @@ tr:hover{
     background-color: #adadad;
 }
 
-.projektObjekt{
+.tableCell{
     border-collapse: collapse;
     border: 1px solid rgb(100, 100, 100)
 }
@@ -32,7 +32,7 @@ tr:hover{
     color:#3038d6;
 }
 
-#addProjektSection{
+#addProjectSection{
     border: 1px grey solid;
     box-shadow: 5px 5px #d7d9ff;
     padding: 1em;

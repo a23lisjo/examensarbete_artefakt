@@ -1,6 +1,6 @@
 import Navbar from "./components/navbar";
-import Hem from "./pages/Hem/Hem";
-import Projekt from "./pages/Projekt/Projekt";
+import Home from "./pages/Home/Home";
+import Project from "./pages/Project/Project";
 import "./App.css"
 
 import { Routes, Route } from "react-router-dom";
@@ -10,8 +10,8 @@ function App() {
     <div id="templatePage">
       <Navbar/>
         <Routes>
-          <Route path="/" element={<Hem />} />
-          <Route path="/projekt" element={<Projekt />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/project" element={<Project />} />
         </Routes>
     </div>
   );

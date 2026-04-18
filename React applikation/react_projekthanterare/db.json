@@ -1,13 +1,1197 @@
 {
-  "projekt": [
+  "project": [
     {
-      "namn": "Projekt1",
-      "startDatum": "2026-04-11",
-      "slutDatum": "2026-04-16",
-      "prioritet": "Hög",
-      "id": "CiBd8DZ7ugQ"
+      "WBS":1.0,
+      "Task":"CONTRACT AWARD",
+      "Duration":null,
+      "Predecessors":null,
+      "Successors":"5,8,73,75,113",
+      "Budget":null
+    },
+    {
+      "WBS":2.0,
+      "Task":"PRACTICAL COMPLETION",
+      "Duration":null,
+      "Predecessors":"10,108,115,145,6,70,105,75",
+      "Successors":null,
+      "Budget":null
+    },
+    {
+      "WBS":5.0,
+      "Task":"Schedule A - Roadworks Dysart Bypass Road Widening Preliminaries - Site establishment, Provision for Workplace Health & Safety, Site Cleanup and Dis-establishment",
+      "Duration":2.0,
+      "Predecessors":"3,8",
+      "Successors":"6,7,9,45,74,73,76,11,15,16,71,79,80,119,120",
+      "Budget":34725.0
+    },
+    {
+      "WBS":6.0,
+      "Task":"Provision for Traffic and Safety including an approved Traffic Management Plan required by Council prior to commencement of site works.",
+      "Duration":71.0,
+      "Predecessors":5,
+      "Successors":4,
+      "Budget":76266.83114
+    },
+    {
+      "WBS":7.0,
+      "Task":"Construction Setout by Contractor",
+      "Duration":9.0,
+      "Predecessors":5,
+      "Successors":9,
+      "Budget":23680.0
+    },
+    {
+      "WBS":8.0,
+      "Task":"Provision of evidence of Public Liability Insurance ($10 million), and Workers Compensation Insurance for the works.",
+      "Duration":1.0,
+      "Predecessors":3,
+      "Successors":5,
+      "Budget":10400.0
+    },
+    {
+      "WBS":9.0,
+      "Task":"Locate Existing Services (Dial-Before-You-Dig, CapVac Truck etc) as required in existing road reserves",
+      "Duration":2.0,
+      "Predecessors":"5,7",
+      "Successors":18,
+      "Budget":6800.0
+    },
+    {
+      "WBS":10.0,
+      "Task":"As Constructed Survey Data to Council Requirements.",
+      "Duration":6.0,
+      "Predecessors":44,
+      "Successors":4,
+      "Budget":8880.0
+    },
+    {
+      "WBS":11.0,
+      "Task":"Geotechnical Testing by NATA Registered laboratory - Subgrade CBR tests (soaked 4 day, 4 point) (allow 3 confirmation tests on final subgrade for pavement design)",
+      "Duration":0.0,
+      "Predecessors":5,
+      "Successors":12,
+      "Budget":2700.0
+    },
+    {
+      "WBS":12.0,
+      "Task":"Subgrade Compaction testing as specified",
+      "Duration":0.0,
+      "Predecessors":11,
+      "Successors":null,
+      "Budget":5926.6666666667
+    },
+    {
+      "WBS":13.0,
+      "Task":"Sub-Base Compaction testing as specified - assume 1 layer",
+      "Duration":0.0,
+      "Predecessors":25,
+      "Successors":24,
+      "Budget":5926.6666666667
+    },
+    {
+      "WBS":14.0,
+      "Task":"Base Compaction testing as specified",
+      "Duration":0.0,
+      "Predecessors":23,
+      "Successors":27,
+      "Budget":5926.6666666667
+    },
+    {
+      "WBS":15.0,
+      "Task":"Sub-Base Quality Testing as specified; Full Atterbergs and grading plus full Quarry Stockpile results - assume 1 layer",
+      "Duration":0.0,
+      "Predecessors":5,
+      "Successors":26,
+      "Budget":2580.0
+    },
+    {
+      "WBS":16.0,
+      "Task":"Base Quality Testing as specified; Full Atterbergs and grading plus full Quarry Stockpile results.",
+      "Duration":0.0,
+      "Predecessors":5,
+      "Successors":24,
+      "Budget":2580.0
+    },
+    {
+      "WBS":17.0,
+      "Task":"Culvert Trench Backfilling - Compaction Tests as ordered",
+      "Duration":0.0,
+      "Predecessors":null,
+      "Successors":null,
+      "Budget":2328.3333333333
+    },
+    {
+      "WBS":18.0,
+      "Task":"Clearing & Grubbing and complete offsite disposal of Spoil inclusive of Dump Fees as required.",
+      "Duration":3.0,
+      "Predecessors":"145,9",
+      "Successors":"19,45,152",
+      "Budget":12317.3333333333
+    },
+    {
+      "WBS":19.0,
+      "Task":"Earthworks - excavate and place as embankment as directed - Cut to fill - Ch 18 to Ch 2801 to achieve boxed out widening of existing road x 350mm deep - refer type cross section (total of 2804 m3 of Cut and 225 m3 of Fill) balance of cut material will b",
+      "Duration":7.0,
+      "Predecessors":18152,
+      "Successors":20151,
+      "Budget":33689.752
+    },
+    {
+      "WBS":20.0,
+      "Task":"Remove isolated soft spots in subgrade as ordered and replace with Selected Spoil material - Provisional Item",
+      "Duration":1.0,
+      "Predecessors":19151,
+      "Successors":21,
+      "Budget":2514.8
+    },
+    {
+      "WBS":21.0,
+      "Task":"Provisional Item Allowance to excavate an additional 150mm depth to the pavement box if required over 25% of length (material to spoil at IRC Tip) - Only if ordered by the Superintendent",
+      "Duration":2.0,
+      "Predecessors":20,
+      "Successors":22,
+      "Budget":9338.148
+    },
+    {
+      "WBS":22.0,
+      "Task":"Prepare Subgrade Surface for Gravel Pavement & for Council Inspection, (incl. provision of subgrade levels and compaction test results by Contractor) Bypass Road Widening from Ch 18 to Ch 2801",
+      "Duration":7.0,
+      "Predecessors":21,
+      "Successors":45,
+      "Budget":32988.3385
+    },
+    {
+      "WBS":23.0,
+      "Task":"Prepare Base Gravel Surface for Primerseal & for Council Inspection, incl provision of compaction test results - Bypass Road Widening Ch 18 to 2801",
+      "Duration":3.0,
+      "Predecessors":24153,
+      "Successors":14,
+      "Budget":15618.0151515152
+    },
+    {
+      "WBS":24.0,
+      "Task":"Gravel Pavement Base In Place complete, including supply, spreading, watering, rolling and trimming:- (a) Bypass Road Widening Ch 18 to Ch 2801 - QT Type 2.1 @ 150mm deep x widening area",
+      "Duration":5.0,
+      "Predecessors":"25,16,13",
+      "Successors":23153,
+      "Budget":131510.407425
+    },
+    {
+      "WBS":25.0,
+      "Task":"Gravel Pavement Base In Place complete, including supply, spreading, watering, rolling and trimming:- (a) Bypass Road Widening Ch 18 to Ch 2801 -Upper Sub-Base QT Type 2.3 @ 200mm deep x widening area",
+      "Duration":8.0,
+      "Predecessors":26,
+      "Successors":"24,13",
+      "Budget":211113.9796
+    },
+    {
+      "WBS":26.0,
+      "Task":"Gravel Pavement Base In Place complete, including supply, spreading, watering, rolling and trimming:- (a) Bypass Road Widening Ch 18 to Ch 2801 - Provisional Item Allowance for Lower Sub-Base QT Type 2.5 @ 150mm deep x widening area over selected 25% of l",
+      "Duration":3.0,
+      "Predecessors":"67,15",
+      "Successors":25,
+      "Budget":48873.2137875
+    },
+    {
+      "WBS":27.0,
+      "Task":"Primerseal complete in place (10mm stone ); spray rates nominally to be 1.1 l\/sqm C170 - SEAL DESIGN TO BE CONFIRMED Bypass Road LHS Shoulder 1 metre wide Ch 510 to Ch 650",
+      "Duration":1.0,
+      "Predecessors":14,
+      "Successors":28,
+      "Budget":754.6
+    },
+    {
+      "WBS":28.0,
+      "Task":"Primerseal complete in place (10mm stone ); spray rates nominally to be 1.1 l\/sqm C170 - SEAL DESIGN TO BE CONFIRMED Bypass Road Widening plus 1 metre wide shoulder RHS Ch 510 to Ch 650",
+      "Duration":1.0,
+      "Predecessors":27,
+      "Successors":29,
+      "Budget":1999.69
+    },
+    {
+      "WBS":29.0,
+      "Task":"Bypass Road 7 metre section over where New RCBC culvert placement approx Ch 600",
+      "Duration":1.0,
+      "Predecessors":28,
+      "Successors":30,
+      "Budget":199.43
+    },
+    {
+      "WBS":30.0,
+      "Task":"Bitumen Seal - First Coat complete in place (16mm primerseal ) ; spray rates nominally to be 1.6 l\/sqm C170 - SHOULDER WIDENING, SEAL DESIGN TO BE CONFIRMED Bypass Road Widening Ch 18 to Ch 510",
+      "Duration":1.0,
+      "Predecessors":29,
+      "Successors":31,
+      "Budget":5198.424
+    },
+    {
+      "WBS":31.0,
+      "Task":"Bitumen Seal - First Coat complete in place (16mm primerseal ) ; spray rates nominally to be 1.6 l\/sqm C170 - SHOULDER WIDENING, SEAL DESIGN TO BE CONFIRMED - Bypass Road Widening Ch 650 to Ch 2801",
+      "Duration":1.0,
+      "Predecessors":30,
+      "Successors":32,
+      "Budget":22720.698
+    },
+    {
+      "WBS":32.0,
+      "Task":"Bitumen Seal - Second Coat complete in place (10mm second coat); spray rates nominally to be 1.2 l\/sqm C170 - 7 METRE WIDE SEAL, SEAL DESIGN TO BE CONFIRMED -Bypass Road Widening Ch 18 to Ch 510",
+      "Duration":1.0,
+      "Predecessors":31,
+      "Successors":33,
+      "Budget":13676.124
+    },
+    {
+      "WBS":33.0,
+      "Task":"Bitumen Seal - Second Coat complete in place (10mm second coat); spray rates nominally to be 1.2 l\/sqm C170 - 7 METRE WIDE SEAL, SEAL DESIGN TO BE CONFIRMED - Bypass Road Widening Ch 650 to Ch 2801",
+      "Duration":2.0,
+      "Predecessors":32,
+      "Successors":"34,35FF",
+      "Budget":59791.347
+    },
+    {
+      "WBS":34.0,
+      "Task":"DG10 Asphaltic Concrete Pavement 35mm minimum thickness - complete in place including sawcut edges and neat smooth joins - Bypass Road Floodway - Ch 510 to Ch 650 (x 9 metres wide)",
+      "Duration":1.0,
+      "Predecessors":"33,37",
+      "Successors":"38,41",
+      "Budget":34546.8375
+    },
+    {
+      "WBS":35.0,
+      "Task":"Access Ch 826 RHS (Dysart Horse Performance Association) - Provide smooth transition between existing access and new shoulder (no pipe required; reinstate to similar)",
+      "Duration":1.0,
+      "Predecessors":"33FF",
+      "Successors":"36FF",
+      "Budget":723.8
+    },
+    {
+      "WBS":36.0,
+      "Task":"Access Ch 1642 RHS (Cemetery Carpark Access) - Reinstate sealed driveway between New shoulder and Carpark Access (no works on culvert required); neat smooth join.",
+      "Duration":1.0,
+      "Predecessors":"35FF",
+      "Successors":"37FF",
+      "Budget":1014.8
+    },
+    {
+      "WBS":37.0,
+      "Task":"Access Ch 1660 RHS (Cemetery Access) - Reinstate sealed driveway between New shoulder and Cemetery Access (no works on culvert required); neat smooth join.",
+      "Duration":1.0,
+      "Predecessors":"36FF",
+      "Successors":34,
+      "Budget":1014.8
+    },
+    {
+      "WBS":38.0,
+      "Task":"Soil Management Measures inclusive of: Prepare batters and drains for hydromulch placement",
+      "Duration":8.0,
+      "Predecessors":34,
+      "Successors":39,
+      "Budget":21352.5675
+    },
+    {
+      "WBS":39.0,
+      "Task":"Soil Management Measures inclusive of: Hydromulch to all disturbed areas as directed (batters & drains)",
+      "Duration":4.0,
+      "Predecessors":38,
+      "Successors":40,
+      "Budget":27731.05
+    },
+    {
+      "WBS":40.0,
+      "Task":"Soil Management Measures inclusive of: Rock check dams as directed",
+      "Duration":2.0,
+      "Predecessors":39,
+      "Successors":null,
+      "Budget":10842.6666666667
+    },
+    {
+      "WBS":41.0,
+      "Task":"Supply and Install New Guide Posts - allow new on widened side only and adjacent to end wall extensions",
+      "Duration":0.0,
+      "Predecessors":34,
+      "Successors":42,
+      "Budget":2000.0
+    },
+    {
+      "WBS":42.0,
+      "Task":"Supply and Install Floodway Depth markers (G9-22-1A)",
+      "Duration":1.0,
+      "Predecessors":41,
+      "Successors":43,
+      "Budget":957.6
+    },
+    {
+      "WBS":43.0,
+      "Task":"Remove Signs for widening and reinstate",
+      "Duration":1.0,
+      "Predecessors":42,
+      "Successors":44,
+      "Budget":338.8
+    },
+    {
+      "WBS":44.0,
+      "Task":"Provisional Item Guardrail as per Note 5 on plan 842-R02 allow (3 lengths of Armoc ® 'W' Beam type XR & standard posts rammed into the ground with bull nose terminal ends) Only if ordered by Superintendent",
+      "Duration":4.0,
+      "Predecessors":43,
+      "Successors":10,
+      "Budget":28000.0
+    },
+    {
+      "WBS":45.0,
+      "Task":"Schedule B - Drainage Dysart Bypass Rd: Ch 49.400 Extend 375 dia SRC Pipe Class 2, Installation to Main Roads Std Dwg 1359 - 1 x 375 dia SRC Pipe Cl 2 Complete in place, incl. removal of existing headwall with care, excavate, sand, supply, lay and backfi",
+      "Duration":1.0,
+      "Predecessors":"5,18,22",
+      "Successors":46,
+      "Budget":1297.351
+    },
+    {
+      "WBS":46.0,
+      "Task":"1 x 375 dia Endwall , Precast Type with wings Complete in place, incl. Excavate, sand, supply and install.",
+      "Duration":1.0,
+      "Predecessors":45,
+      "Successors":47,
+      "Budget":1257.8
+    },
+    {
+      "WBS":47.0,
+      "Task":"Ch 300 Extend 4\/450 dia SRC Pipe Class 2, Installation to Main Roads Std Dwg 1359 - 4 x 450 SRC Pipe Cl 2 Complete in place, incl. removal of existing Endwall with care, excavate, sand, supply, lay & backfill.",
+      "Duration":1.0,
+      "Predecessors":46,
+      "Successors":48,
+      "Budget":1344.931
+    },
+    {
+      "WBS":48.0,
+      "Task":"4 x 450 Cast Insitu Endwall to Main Roads Std Dwg 1306 Complete in place, incl. Excavate, supply and construct",
+      "Duration":1.0,
+      "Predecessors":47,
+      "Successors":49,
+      "Budget":2338.85
+    },
+    {
+      "WBS":49.0,
+      "Task":"Ch 600 Extend 2\/1800 x 600 RCBC and Add 3 New Cells 1800 x 600, Installation to Main Roads Std Dwg 1359 - Extend existing 2\/1800 x 600 RCBC Complete in place, incl. removal of existing Endwalls with care, excavate, sand, supply, lay & backfill.",
+      "Duration":4.0,
+      "Predecessors":48,
+      "Successors":50,
+      "Budget":20898.88874
+    },
+    {
+      "WBS":50.0,
+      "Task":"Install NEW 3\/1800 x 600 RCBC adjacent to existing lengthened Culvert Complete in place, incl. excavate, sand, supply, lay and backfill.",
+      "Duration":2.0,
+      "Predecessors":49,
+      "Successors":51,
+      "Budget":64286.6381866662
+    },
+    {
+      "WBS":51.0,
+      "Task":"NEW 5\/1800 x 600 Cast Insitu Endwalls and Aprons to Main Roads Std Dwgs 1304 and 1371 Complete in place, incl. Excavate, supply and construct (existing to be removed)",
+      "Duration":1.0,
+      "Predecessors":50,
+      "Successors":"52,54",
+      "Budget":2161.4
+    },
+    {
+      "WBS":52.0,
+      "Task":"Excavate inlet and outlet at 0.5% grade with 10m base width to connect to existing drains neatly and smoothly.",
+      "Duration":1.0,
+      "Predecessors":51,
+      "Successors":53,
+      "Budget":1661.4
+    },
+    {
+      "WBS":53.0,
+      "Task":"Rip Rap Rock Protection in 250mm dia rock (layer 0.5m thick) to Outlet to extend 10m past culvert end and up batters a minimum of 1m - leave neat, tidy and even surface to rock.",
+      "Duration":1.0,
+      "Predecessors":52,
+      "Successors":68,
+      "Budget":3372.6
+    },
+    {
+      "WBS":54.0,
+      "Task":"Ch 800 Extend 4\/450 dia SRC Pipe Class 2, Installation to Main Roads Std Dwg 1359 - 4 x 450 SRC Pipe Cl 2 Complete in place, incl. removal of existing Endwall with care, excavate, sand, supply, lay & backfill.",
+      "Duration":1.0,
+      "Predecessors":51,
+      "Successors":55,
+      "Budget":2118.874
+    },
+    {
+      "WBS":55.0,
+      "Task":"4 x 450 Cast Insitu Endwall ,Main Roads Std Dwg 1306 Complete in place, incl. Excavate, supply and construct",
+      "Duration":1.0,
+      "Predecessors":54,
+      "Successors":56,
+      "Budget":2338.85
+    },
+    {
+      "WBS":56.0,
+      "Task":"Ch 1300 Extend 4\/450 dia SRC Pipe Class 2 SRC, Installation to Main Roads STD DWG 1359 - 4 x 450 SRC Pipe Cl 2 Complete in place, incl. removal of existing headwall with care, excavate, sand, supply, lay & backfill.",
+      "Duration":1.0,
+      "Predecessors":55,
+      "Successors":57,
+      "Budget":2078.392
+    },
+    {
+      "WBS":57.0,
+      "Task":"4 x 450 Cast Insitu Endwall to Main Roads Std Dwg 1306 Complete in place, incl. Excavate, supply and construct",
+      "Duration":1.0,
+      "Predecessors":56,
+      "Successors":58,
+      "Budget":2338.85
+    },
+    {
+      "WBS":58.0,
+      "Task":"Ch 1500 Extend 375 dia SRC Pipe Class 2, Installation to Main Roads Std Dwg 1359 - 1 x 375 SRC Pipe Cl 2 Complete in place, incl. removal of existing Endwall with care, excavate, sand, supply, lay & backfill.",
+      "Duration":1.0,
+      "Predecessors":57,
+      "Successors":59,
+      "Budget":1306.844623
+    },
+    {
+      "WBS":59.0,
+      "Task":"1 x 375 Endwall with wings , Precast Type Complete in place, incl. Excavate, sand, supply and install.",
+      "Duration":1.0,
+      "Predecessors":58,
+      "Successors":60,
+      "Budget":1257.8
+    },
+    {
+      "WBS":60.0,
+      "Task":"Ch 1749.800 Extend 2\/450 dia SRC Pipe Class 2, Installation to Main Roads Std Dwg 1359 - 2 x 450 SRC Pipe Cl 2 Complete in place, incl. removal of existing Endwall with care, excavate, sand, supply, lay & backfill.",
+      "Duration":2.0,
+      "Predecessors":59,
+      "Successors":61,
+      "Budget":2147.6136978017
+    },
+    {
+      "WBS":61.0,
+      "Task":"2 x 450 Cast Insitu Endwall to Main Roads Std Dwg 1306 Complete in place, incl. Excavate, supply and construct",
+      "Duration":1.0,
+      "Predecessors":60,
+      "Successors":62,
+      "Budget":2147.975
+    },
+    {
+      "WBS":62.0,
+      "Task":"Ch 1949.800 Extend 2\/750 dia SRC Pipe Class 2, Installation to Main Roads Std Dwg 1359 - 2 x 750 SRC Pipe Cl 2 Complete in place, incl. removal of existing Endwall with care, excavate, sand, supply, lay & backfill.",
+      "Duration":2.0,
+      "Predecessors":61,
+      "Successors":63,
+      "Budget":3398.313354615
+    },
+    {
+      "WBS":63.0,
+      "Task":"2 x 750 Cast Insitu Endwall ,Main Roads Std Dwg 1304 Complete in place, incl. Excavate, supply and construct",
+      "Duration":1.0,
+      "Predecessors":62,
+      "Successors":64,
+      "Budget":4019.9
+    },
+    {
+      "WBS":64.0,
+      "Task":"Ch 2200 Extend 1\/375 dia SRC Pipe Class 2, Installation to Main Roads Std Dwg 1359 - 1 x 375 SRC Pipe Cl 2 Complete in place, incl. removal of existing Endwall with care, excavate, sand, supply, lay & backfill.",
+      "Duration":1.0,
+      "Predecessors":63,
+      "Successors":65,
+      "Budget":1332.794623
+    },
+    {
+      "WBS":65.0,
+      "Task":"1 x 375 Endwall , Precast Type with wings, Complete in place, incl. Excavate, sand, supply and install.",
+      "Duration":1.0,
+      "Predecessors":64,
+      "Successors":66,
+      "Budget":892.8
+    },
+    {
+      "WBS":66.0,
+      "Task":"Ch 2720 Extend 2\/375 dia SRC Pipe Class 2, Installation to Main Roads Std Dwg 1359 - 2 x 375 SRC Pipe Cl 2 Complete in place, incl. removal of existing Endwall with care, excavate, sand, supply, lay & backfill.",
+      "Duration":2.0,
+      "Predecessors":65,
+      "Successors":67,
+      "Budget":1980.7849926017
+    },
+    {
+      "WBS":67.0,
+      "Task":"1\/600 x 300 Cast Insitu Endwall and Apron to Main Roads Std Dwgs 1304 and 1371 Complete in place, incl. Excavate, supply and construct",
+      "Duration":1.0,
+      "Predecessors":66,
+      "Successors":"68,26",
+      "Budget":947.8
+    },
+    {
+      "WBS":68.0,
+      "Task":"Excavate inlet and outlet at 0.5% grade with 1.0m base width to connect to existing drains neatly and smoothly.",
+      "Duration":1.0,
+      "Predecessors":"67,53",
+      "Successors":69,
+      "Budget":1658.0838323353
+    },
+    {
+      "WBS":69.0,
+      "Task":"Rip Rap Rock Protection in 250mm dia rock (layer 0.5m thick) to Outlet to extend 10m past culvert end and up batters a minimum of 1m - leave neat, tidy and even surface to rock",
+      "Duration":1.0,
+      "Predecessors":68,
+      "Successors":70,
+      "Budget":2322.6
+    },
+    {
+      "WBS":70.0,
+      "Task":"Ch 2800 Take up and stack existing 1\/600 x 300 RCBC and backfill to reinstate roadway.",
+      "Duration":1.0,
+      "Predecessors":69,
+      "Successors":4,
+      "Budget":4666.85
+    },
+    {
+      "WBS":71.0,
+      "Task":"Schedule C - Dysart Middlemount \/ Dysart Bypass Intersection - Provision for Traffic and Safety including an approved Traffic Management Plan required by Council prior to commencement of site works.",
+      "Duration":13.0,
+      "Predecessors":5,
+      "Successors":72,
+      "Budget":28325.0469106529
+    },
+    {
+      "WBS":72.0,
+      "Task":"Construction Setout by Contractor",
+      "Duration":4.0,
+      "Predecessors":"71,73",
+      "Successors":74,
+      "Budget":5180.0
+    },
+    {
+      "WBS":73.0,
+      "Task":"Provision of evidence of Public Liability Insurance ($10 million), and Workers Compensation Insurance for the works.",
+      "Duration":1.0,
+      "Predecessors":"3,5",
+      "Successors":72,
+      "Budget":2800.0
+    },
+    {
+      "WBS":74.0,
+      "Task":"Locate Existing Services (Dial-Before-You-Dig, CapVac Truck etc) as required in existing road reserves",
+      "Duration":1.0,
+      "Predecessors":"5,72",
+      "Successors":81,
+      "Budget":3200.0
+    },
+    {
+      "WBS":75.0,
+      "Task":"As Constructed Survey Data to Council Requirements.",
+      "Duration":2.0,
+      "Predecessors":3108,
+      "Successors":4,
+      "Budget":5920.0
+    },
+    {
+      "WBS":76.0,
+      "Task":"Geotechnical Testing by NATA Registered laboratory - Subgrade Compaction testing as specified",
+      "Duration":0.0,
+      "Predecessors":"5,85",
+      "Successors":90,
+      "Budget":846.6666666667
+    },
+    {
+      "WBS":77.0,
+      "Task":"Sub-Base Compaction testing as specified - assume 2 layers",
+      "Duration":0.0,
+      "Predecessors":92,
+      "Successors":88,
+      "Budget":846.6666666667
+    },
+    {
+      "WBS":78.0,
+      "Task":"Base Compaction testing as specified",
+      "Duration":0.0,
+      "Predecessors":"87,85",
+      "Successors":95,
+      "Budget":423.3333333333
+    },
+    {
+      "WBS":79.0,
+      "Task":"Sub-Base Quality Testing as specified; Full Atterbergs plus grading plus full Quarry Stockpile results - assume 2 layers",
+      "Duration":0.0,
+      "Predecessors":5,
+      "Successors":90,
+      "Budget":1290.0
+    },
+    {
+      "WBS":80.0,
+      "Task":"Base Quality Testing as specified; Full Atterbergs plus grading plus full Quarry Stockpile results",
+      "Duration":0.0,
+      "Predecessors":5,
+      "Successors":88,
+      "Budget":1290.0
+    },
+    {
+      "WBS":81.0,
+      "Task":"Clearing & Grubbing, removal of existing kerb and complete offsite disposal of Spoil inclusive of Dump Fees as required.",
+      "Duration":2.0,
+      "Predecessors":74,
+      "Successors":82,
+      "Budget":5321.3963963964
+    },
+    {
+      "WBS":82.0,
+      "Task":"Earthworks - excavate and place as embankment as directed - Cut to Spoil - to achieve boxed out deep to 500mm - material will be spoiled at IRC Tip.",
+      "Duration":2.0,
+      "Predecessors":81,
+      "Successors":83,
+      "Budget":4967.1131058393
+    },
+    {
+      "WBS":83.0,
+      "Task":"Remove isolated soft spots in subgrade as ordered and replace with Selected Spoil material - Provisional Item",
+      "Duration":1.0,
+      "Predecessors":82,
+      "Successors":"84,99",
+      "Budget":3143.5
+    },
+    {
+      "WBS":84.0,
+      "Task":"Prepare Dysart Bypass Rd - Middlemount Rd Intersection Subgrade Surface for Gravel Pavement & for Council \/ MRD Inspection, (incl. provision of subgrade levels and compaction test results by Contractor) - Dysart Bypass Rd - Middlemount Rd Intersection LHS",
+      "Duration":1.0,
+      "Predecessors":"83,99,110,109",
+      "Successors":85,
+      "Budget":1843.905
+    },
+    {
+      "WBS":85.0,
+      "Task":"Prepare Dysart Bypass Rd - Middlemount Rd Intersection Subgrade Surface for Gravel Pavement & for Council \/ MRD Inspection, (incl. provision of subgrade levels and compaction test results by Contractor) - Dysart Bypass Rd - Middlemount Rd Intersection RHS",
+      "Duration":1.0,
+      "Predecessors":84,
+      "Successors":"111,76,90,78",
+      "Budget":1680.0023333333
+    },
+    {
+      "WBS":86.0,
+      "Task":"Prepare Base Gravel Surface for Primerseal & for Council \/ MRD Inspection, incl provision of compaction test results - Dysart Bypass Rd - Middlemount Rd Intersection LHS",
+      "Duration":1.0,
+      "Predecessors":91,
+      "Successors":87,
+      "Budget":925.4335757576
+    },
+    {
+      "WBS":87.0,
+      "Task":"Prepare Base Gravel Surface for Primerseal & for Council \/ MRD Inspection, incl provision of compaction test results - Dysart Bypass Rd - Middlemount Rd Intersection RHS",
+      "Duration":1.0,
+      "Predecessors":86,
+      "Successors":78,
+      "Budget":878.8442424242
+    },
+    {
+      "WBS":88.0,
+      "Task":"Gravel Pavement In Place complete, including supply, spreading, watering, rolling and trimming:- (a) Dysart Bypass Rd - Middlemount Rd Intersection LHS - Base QT Type 2.1 @ 150mm deep",
+      "Duration":1.0,
+      "Predecessors":"98,77,80",
+      "Successors":91,
+      "Budget":7478.2426181619
+    },
+    {
+      "WBS":89.0,
+      "Task":"Gravel Pavement In Place complete, including supply, spreading, watering, rolling and trimming:- (a) Dysart Bypass Rd - Middlemount Rd Intersection LHS Upper Sub-Base QT Type 2.3 @ 200mm deep",
+      "Duration":1.0,
+      "Predecessors":93,
+      "Successors":92,
+      "Budget":11116.7155020475
+    },
+    {
+      "WBS":90.0,
+      "Task":"Gravel Pavement In Place complete, including supply, spreading, watering, rolling and trimming:- (a) Dysart Bypass Rd - Middlemount Rd Intersection LHS - Lower Sub-Base QT Type 2.5 @ 150mm deep",
+      "Duration":1.0,
+      "Predecessors":"85,76,79",
+      "Successors":93,
+      "Budget":9160.1583662082
+    },
+    {
+      "WBS":91.0,
+      "Task":"Gravel Pavement In Place complete, including supply, spreading, watering, rolling and trimming:- (B) Dysart Bypass Rd - Middlemount Rd Intersection RHS - Base QT Type 2.1 @ 150mm deep",
+      "Duration":1.0,
+      "Predecessors":88,
+      "Successors":"86,94",
+      "Budget":7050.9144685527
+    },
+    {
+      "WBS":92.0,
+      "Task":"Gravel Pavement In Place complete, including supply, spreading, watering, rolling and trimming:- (B) Dysart Bypass Rd - Middlemount Rd Intersection RHS -Upper Sub-Base QT Type 2.3 @ 200mm deep",
+      "Duration":1.0,
+      "Predecessors":89,
+      "Successors":"98,77",
+      "Budget":10285.559202829
+    },
+    {
+      "WBS":93.0,
+      "Task":"Gravel Pavement In Place complete, including supply, spreading, watering, rolling and trimming:- (B) Dysart Bypass Rd - Middlemount Rd Intersection RHS -Lower Sub-Base QT Type 2.5 @ 150mm deep",
+      "Duration":1.0,
+      "Predecessors":90,
+      "Successors":89,
+      "Budget":8447.701604392
+    },
+    {
+      "WBS":94.0,
+      "Task":"Provisional Item Pavement Repairs - Cement Stabilise 4% by weight 200mm deep any failed areas identified by the Superintendent as ordered.",
+      "Duration":2.0,
+      "Predecessors":91,
+      "Successors":"100,95",
+      "Budget":5610.0654544832
+    },
+    {
+      "WBS":95.0,
+      "Task":"Bitumen Seal - complete in place (10mm primerseal ) ; spray rates nominally to be 1.1 l\/sqm C170 - SEAL DESIGN TO BE CONFIRMED - Dysart Bypass Rd - Middlemount Rd Intersection LHS",
+      "Duration":1.0,
+      "Predecessors":"78,94",
+      "Successors":"96FF",
+      "Budget":2355.43
+    },
+    {
+      "WBS":96.0,
+      "Task":"Bitumen Seal - complete in place (10mm primerseal ) ; spray rates nominally to be 1.1 l\/sqm C170 - SEAL DESIGN TO BE CONFIRMED - Dysart Bypass Rd - Middlemount Rd Intersection RHS",
+      "Duration":1.0,
+      "Predecessors":"95FF",
+      "Successors":97,
+      "Budget":2236.85
+    },
+    {
+      "WBS":97.0,
+      "Task":"Asphaltic Concrete Pavement MRD Type DG14 and 60 mm minimum thickness - complete in place. - Dysart Bypass Rd - Middlemount Rd Intersection Complete (overlaying existing seal area)",
+      "Duration":2.0,
+      "Predecessors":96,
+      "Successors":106,
+      "Budget":115460.546605466
+    },
+    {
+      "WBS":98.0,
+      "Task":"Medians Kerb at Intersections - Type 5 Concrete Kerb in minimum 25 MPa concrete",
+      "Duration":1.0,
+      "Predecessors":92,
+      "Successors":88102,
+      "Budget":5701.1956989247
+    },
+    {
+      "WBS":99.0,
+      "Task":"Street Lighting - Conduits and Bases - Electrical Mains Trenching and Conduiting including bends, draw-wire, sand, bed, backfill, warning tape: 1 x 100 dia LV (HD) + HARD COVER (Provisional Item)",
+      "Duration":1.0,
+      "Predecessors":83,
+      "Successors":"100,84,109",
+      "Budget":2078.1625
+    },
+    {
+      "WBS":100.0,
+      "Task":"Electrical Under Road Bore complete including conduit bends and draw-wire: 1 x 100 dia LV (HD) (Provisional Item)",
+      "Duration":3.0,
+      "Predecessors":"94,99",
+      "Successors":101,
+      "Budget":3600.0
+    },
+    {
+      "WBS":101.0,
+      "Task":"Electrical Mains Cable Pit (Provisional Item)",
+      "Duration":1.0,
+      "Predecessors":111100102,
+      "Successors":103,
+      "Budget":2452.8
+    },
+    {
+      "WBS":102.0,
+      "Task":"Street Light Bases Complete in Place, including supply of rag bolts and excluding Conduiting Major Pole Base (NB - ALL 10.5m POLES NEED THE LARGER BASES)",
+      "Duration":1.0,
+      "Predecessors":98,
+      "Successors":103101,
+      "Budget":2690.8
+    },
+    {
+      "WBS":103.0,
+      "Task":"Soil Management Measures inclusive of: Prepare batters and drains for hydromulch placement",
+      "Duration":1.0,
+      "Predecessors":102101,
+      "Successors":104,
+      "Budget":767.25
+    },
+    {
+      "WBS":104.0,
+      "Task":"Soil Management Measures inclusive of: Hydromulch to all disturbed areas as directed (batters and drains)",
+      "Duration":1.0,
+      "Predecessors":103,
+      "Successors":105,
+      "Budget":1125.0
+    },
+    {
+      "WBS":105.0,
+      "Task":"Soil Management Measures inclusive of: Rock check dams as directed",
+      "Duration":1.0,
+      "Predecessors":104,
+      "Successors":4,
+      "Budget":1626.4
+    },
+    {
+      "WBS":106.0,
+      "Task":"Supply and Install New Guide Posts",
+      "Duration":1.0,
+      "Predecessors":97,
+      "Successors":107,
+      "Budget":550.0
+    },
+    {
+      "WBS":107.0,
+      "Task":"Supply and Install New Give Way Sign R1-2",
+      "Duration":1.0,
+      "Predecessors":106,
+      "Successors":108,
+      "Budget":338.8
+    },
+    {
+      "WBS":108.0,
+      "Task":"Linemarking Complete,Dysart Bypass Rd - Middlemount Rd Intersection - Reinstate existing and new lines as per drawing No 842 - R19",
+      "Duration":1.0,
+      "Predecessors":107,
+      "Successors":"4,75",
+      "Budget":7500.0
+    },
+    {
+      "WBS":109.0,
+      "Task":"Drainage - Ch 140 Middlemount Road Culvert 1A - Extend existing 600 x 300 RCBC RHS, complete in place incl. excavate, sand, supply, lay and backfill",
+      "Duration":1.0,
+      "Predecessors":99,
+      "Successors":"110,84",
+      "Budget":4014.9044301394
+    },
+    {
+      "WBS":110.0,
+      "Task":"Drainage - Ch 140 Middlemount Road - 1\/600 x 300 Cast Insitu Endwall and Apron to Main Roads Std Dwgs complete in place",
+      "Duration":1.0,
+      "Predecessors":109,
+      "Successors":84,
+      "Budget":947.8
+    },
+    {
+      "WBS":111.0,
+      "Task":"Provision for Traffic and Safety including an approved Traffic Management Plan required by Council prior to commencement of site works.",
+      "Duration":13.0,
+      "Predecessors":85,
+      "Successors":112101,
+      "Budget":28325.0469106529
+    },
+    {
+      "WBS":112.0,
+      "Task":"Construction Setout by Contractor",
+      "Duration":2.0,
+      "Predecessors":111113,
+      "Successors":114,
+      "Budget":5180.0
+    },
+    {
+      "WBS":113.0,
+      "Task":"Provision of evidence of Public Liability Insurance ($10 million), and Workers Compensation Insurance for the works.",
+      "Duration":1.0,
+      "Predecessors":3,
+      "Successors":112,
+      "Budget":2800.0
+    },
+    {
+      "WBS":114.0,
+      "Task":"Locate Existing Services (Dial-Before-You-Dig, CapVac Truck etc) as required in existing road reserves",
+      "Duration":1.0,
+      "Predecessors":112,
+      "Successors":121,
+      "Budget":3200.0
+    },
+    {
+      "WBS":115.0,
+      "Task":"As Constructed Survey Data to Council Requirements.",
+      "Duration":4.0,
+      "Predecessors":148,
+      "Successors":4,
+      "Budget":5920.0
+    },
+    {
+      "WBS":116.0,
+      "Task":"Geotechnical Testing by NATA Registered laboratory - Subgrade Compaction testing as specified",
+      "Duration":0.0,
+      "Predecessors":125,
+      "Successors":130,
+      "Budget":846.6666666667
+    },
+    {
+      "WBS":117.0,
+      "Task":"Sub-Base Compaction testing as specified - assume 2 layers",
+      "Duration":0.0,
+      "Predecessors":132,
+      "Successors":128,
+      "Budget":846.6666666667
+    },
+    {
+      "WBS":118.0,
+      "Task":"Base Compaction testing as specified",
+      "Duration":0.0,
+      "Predecessors":131,
+      "Successors":135,
+      "Budget":423.3333333333
+    },
+    {
+      "WBS":119.0,
+      "Task":"Sub-Base Quality Testing as specified; Full Atterbergs plus grading plus full Quarry Stockpile results - assume 2 layers",
+      "Duration":0.0,
+      "Predecessors":5,
+      "Successors":130,
+      "Budget":1290.0
+    },
+    {
+      "WBS":120.0,
+      "Task":"Base Quality Testing as specified; Full Atterbergs plus grading plus full Quarry Stockpile results",
+      "Duration":0.0,
+      "Predecessors":5,
+      "Successors":128,
+      "Budget":1290.0
+    },
+    {
+      "WBS":121.0,
+      "Task":"Clearing & Grubbing, removal of existing kerb and complete offsite disposal of Spoil inclusive of Dump Fees as required.",
+      "Duration":2.0,
+      "Predecessors":114,
+      "Successors":122,
+      "Budget":5321.3963963964
+    },
+    {
+      "WBS":122.0,
+      "Task":"Earthworks - excavate and place as embankment as directed - Cut to Spoil - to achieve boxed out deep to 500mm - material will be spoiled at IRC Tip.",
+      "Duration":1.0,
+      "Predecessors":121,
+      "Successors":123,
+      "Budget":4967.1
+    },
+    {
+      "WBS":123.0,
+      "Task":"Remove isolated soft spots in subgrade as ordered and replace with Selected Spoil material - Provisional Item",
+      "Duration":1.0,
+      "Predecessors":122,
+      "Successors":139,
+      "Budget":3143.5
+    },
+    {
+      "WBS":124.0,
+      "Task":"Prepare Dysart Bypass Rd - Golden Mile Rd Intersection Subgrade Surface for Gravel Pavement & for Council Inspection, (incl. provision of subgrade levels and compaction test results by Contractor) - Dysart Bypass Rd - Golden Mile Rd Intersection LHS",
+      "Duration":1.0,
+      "Predecessors":139,
+      "Successors":125,
+      "Budget":1270.2456666667
+    },
+    {
+      "WBS":125.0,
+      "Task":"Dysart Bypass Rd - Golden Mile Rd Intersection RHS",
+      "Duration":1.0,
+      "Predecessors":124,
+      "Successors":116,
+      "Budget":2429.2716666667
+    },
+    {
+      "WBS":126.0,
+      "Task":"Prepare Base Gravel Surface for Primerseal & for Council Inspection, incl provision of compaction test results - Dysart Bypass Rd - Golden Mile Rd Intersection LHS",
+      "Duration":1.0,
+      "Predecessors":131,
+      "Successors":127,
+      "Budget":599.3082424242
+    },
+    {
+      "WBS":127.0,
+      "Task":"Dysart Bypass Rd - Golden Mile Rd Intersection RHS",
+      "Duration":1.0,
+      "Predecessors":126,
+      "Successors":134,
+      "Budget":1264.2650909091
+    },
+    {
+      "WBS":128.0,
+      "Task":"Gravel Pavement - In Place complete, including supply, spreading, watering, rolling and trimming:- Dysart Bypass Rd - Golden Mile Rd Intersection LHS - Base QT Type 2.1 @ 150mm deep",
+      "Duration":1.0,
+      "Predecessors":138117120,
+      "Successors":131,
+      "Budget":4914.2737205064
+    },
+    {
+      "WBS":129.0,
+      "Task":"Gravel Pavement - In Place complete, including supply, spreading, watering, rolling and trimming:- Dysart Bypass Rd - Golden Mile Rd Intersection LHS - Upper Sub-Base QT Type 2.3 @ 200mm deep",
+      "Duration":1.0,
+      "Predecessors":133,
+      "Successors":132,
+      "Budget":7480.4066929665
+    },
+    {
+      "WBS":130.0,
+      "Task":"Gravel Pavement - In Place complete, including supply, spreading, watering, rolling and trimming:- Dysart Bypass Rd - Golden Mile Rd Intersection LHS - Lower Sub-Base QT Type 2.5 @ 150mm deep",
+      "Duration":1.0,
+      "Predecessors":116119,
+      "Successors":133,
+      "Budget":6310.3313189434
+    },
+    {
+      "WBS":131.0,
+      "Task":"Gravel Pavement - In Place complete, including supply, spreading, watering, rolling and trimming:- Dysart Bypass Rd - Golden Mile Rd Intersection RHS - Base QT Type 2.1 @ 150mm deep",
+      "Duration":1.0,
+      "Predecessors":128,
+      "Successors":118126,
+      "Budget":10149.0435532197
+    },
+    {
+      "WBS":132.0,
+      "Task":"Gravel Pavement - In Place complete, including supply, spreading, watering, rolling and trimming:- Dysart Bypass Rd - Golden Mile Rd Intersection RHS - Upper Sub-Base QT Type 2.3 @ 200mm deep",
+      "Duration":1.0,
+      "Predecessors":129,
+      "Successors":138117,
+      "Budget":14856.9188485308
+    },
+    {
+      "WBS":133.0,
+      "Task":"Gravel Pavement - In Place complete, including supply, spreading, watering, rolling and trimming:- Dysart Bypass Rd - Golden Mile Rd Intersection RHS - Lower Sub-Base QT Type 2.5 @ 150mm deep",
+      "Duration":1.0,
+      "Predecessors":130,
+      "Successors":129,
+      "Budget":12111.7649508752
+    },
+    {
+      "WBS":134.0,
+      "Task":"Provisional Item Pavement Repairs - Cement Stabilise 4% by weight 200mm deep any failed areas identified by the Superintendent as ordered.",
+      "Duration":2.0,
+      "Predecessors":127,
+      "Successors":135,
+      "Budget":5610.0654544832
+    },
+    {
+      "WBS":135.0,
+      "Task":"Bitumen Seal - complete in place (10mm primerseal ) ; spray rates nominally to be 1.1 l\/sqm C170 - SEAL DESIGN TO BE CONFIRMED - Dysart Bypass Rd - Golden Mile Rd Intersection LHS",
+      "Duration":1.0,
+      "Predecessors":118134,
+      "Successors":"136FF",
+      "Budget":1525.37
+    },
+    {
+      "WBS":136.0,
+      "Task":"Bitumen Seal - complete in place (10mm primerseal ) ; spray rates nominally to be 1.1 l\/sqm C170 - SEAL DESIGN TO BE CONFIRMED - Dysart Bypass Rd - Golden Mile Rd Intersection RHS",
+      "Duration":1.0,
+      "Predecessors":"135FF",
+      "Successors":137,
+      "Budget":3217.83
+    },
+    {
+      "WBS":137.0,
+      "Task":"Asphaltic Concrete Pavement MRD Type DG14 and 60 mm minimum thickness - complete in place. - Dysart Bypass Rd - Golden Mile Rd Intersection Complete (overlaying existing seal area)",
+      "Duration":2.0,
+      "Predecessors":136,
+      "Successors":146,
+      "Budget":121115.2984235079
+    },
+    {
+      "WBS":138.0,
+      "Task":"Medians Kerb at Intersections - Type 5 Concrete Kerb in minimum 25 MPa concrete",
+      "Duration":1.0,
+      "Predecessors":132,
+      "Successors":128142,
+      "Budget":5701.1988
+    },
+    {
+      "WBS":139.0,
+      "Task":"Street Lighting - Conduits and Bases - Electrical Mains Trenching and Conduiting including bends, draw-wire, sand, bed, backfill, warning tape: 1 x 100 dia LV (HD) + HARD COVER (Provisional Item)",
+      "Duration":1.0,
+      "Predecessors":123,
+      "Successors":140124,
+      "Budget":2770.989
+    },
+    {
+      "WBS":140.0,
+      "Task":"Electrical Under Road Bore complete including conduit bends and draw-wire: 1 x 100 dia LV (HD) (Provisional Item)",
+      "Duration":3.0,
+      "Predecessors":139,
+      "Successors":142,
+      "Budget":3860.0
+    },
+    {
+      "WBS":141.0,
+      "Task":"Electrical Mains Cable Pit (Provisional Item)",
+      "Duration":1.0,
+      "Predecessors":142,
+      "Successors":143,
+      "Budget":2452.8
+    },
+    {
+      "WBS":142.0,
+      "Task":"Street Light Bases Complete in Place, including supply of rag bolts and excluding Conduiting Major Pole Base (NB - ALL 10.5m POLES NEED THE LARGER BASES)",
+      "Duration":1.0,
+      "Predecessors":138140,
+      "Successors":141,
+      "Budget":2690.8
+    },
+    {
+      "WBS":143.0,
+      "Task":"Soil Management Measures inclusive of: - Prepare batters and drains for hydromulch placement",
+      "Duration":1.0,
+      "Predecessors":141,
+      "Successors":144,
+      "Budget":767.25
+    },
+    {
+      "WBS":144.0,
+      "Task":"Hydromulch to all disturbed areas as directed (batters & drains)",
+      "Duration":1.0,
+      "Predecessors":143,
+      "Successors":145,
+      "Budget":1125.0
+    },
+    {
+      "WBS":145.0,
+      "Task":"Rock check dams as directed",
+      "Duration":1.0,
+      "Predecessors":144,
+      "Successors":"4,18",
+      "Budget":1626.4
+    },
+    {
+      "WBS":146.0,
+      "Task":"Supply and Install New Guide Posts",
+      "Duration":1.0,
+      "Predecessors":137,
+      "Successors":147,
+      "Budget":500.0
+    },
+    {
+      "WBS":147.0,
+      "Task":"Supply and Install New Give Way Sign R1-2",
+      "Duration":1.0,
+      "Predecessors":146,
+      "Successors":148,
+      "Budget":338.8
+    },
+    {
+      "WBS":148.0,
+      "Task":"Linemarking Complete,Dysart Bypass Rd - Golden Mile Rd Intersection - Reinstate existing and new lines as per drawing No 842 - R19",
+      "Duration":1.0,
+      "Predecessors":147,
+      "Successors":115,
+      "Budget":7500.0
+    },
+    {
+      "WBS":161.0,
+      "Task":"Remove & replace unsuitable - ch0",
+      "Duration":1.0,
+      "Predecessors":19,
+      "Successors":20,
+      "Budget":3300.675
+    },
+    {
+      "WBS":162.0,
+      "Task":"Addiitonal drainage items",
+      "Duration":0.0,
+      "Predecessors":18,
+      "Successors":19,
+      "Budget":7048.884
+    },
+    {
+      "WBS":168.0,
+      "Task":"Stabilisation of Edges - Bypass Road",
+      "Duration":5.0,
+      "Predecessors":24,
+      "Successors":23,
+      "Budget":22336.2231651135
     }
-
   ],
   "$schema": "./node_modules/json-server/schema.json"
 }
