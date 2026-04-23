@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 
 const Form = ({onSubmit}) => {
     const [formData, setFormData] = useState({
@@ -9,30 +9,54 @@ const Form = ({onSubmit}) => {
         successors:"",
         budget:""
     })
-    const handleSubmit = (e) =>{
+    const handleSubmit = async (e) =>{
         e.preventDefault()
-        console.log(formData)
-        onSubmit(formData); 
-       
-        fetch("http://localhost:3000/project", {
+
+        const reMap = {
+            WBS: formData.wbs,
+            Task: formData.task,
+            Duration: formData.duration,
+            Predecessors: formData.predecessors,
+            Successors: formData.successors,
+            Budget: formData.budget
+        };
+
+        const res = await fetch("http://localhost:3000/project", {
             method:'POST',
             headers: {"Content-Type":"application/json"},
-            body: JSON.stringify(formData)
-        }).then (()=>{
-            console.log("Data added")
-        })
+            body: JSON.stringify(reMap)
+        });
+
+        const jsonData = await res.json();
+        onSubmit(reMap); 
+       
          setFormData({ wbs: "", task: "", duration: "", predecessors: "", successors:"", budget:""});
     }
+
+    function fillForm(data) {
+        setFormData({
+            wbs:          String(data.WBS ?? ""),
+            task:         String(data.Task ?? ""),
+            duration:     String(data.Duration ?? ""),
+            predecessors: String(data.Predecessors ?? ""),
+            successors:   String(data.Successors ?? ""),
+            budget:       String(data.Budget ?? "")
+        });
+    }
+
+    useEffect(() => {
+        window.__fillForm = fillForm;
+    }, []);
 
     return(
         <form onSubmit={handleSubmit}>
             <label>WBS:
                 <input 
                     onChange={(e) => setFormData({...formData, wbs:e.target.value})} 
-                    wbs="wbs" 
+                    name="wbs" 
                     value={formData.wbs} 
                     type="text" 
-                    placeholder="WBS" 
+                    placeholder="e.g:1" 
                 />
             </label>
             <label>Task:
@@ -41,7 +65,7 @@ const Form = ({onSubmit}) => {
                     name="task" 
                     value={formData.task} 
                     type="text"
-                    placeholder="task" 
+                    placeholder="e.g:Supply and Install New Guide Posts"
                 />
             </label>
             <label>Duration:
@@ -50,7 +74,7 @@ const Form = ({onSubmit}) => {
                     name="duration" 
                     value={formData.duration} 
                     type="text"
-                    placeholder="duration" 
+                    placeholder="e.g.1" 
                 />
             </label>
             <label>Predecessors:
@@ -59,7 +83,7 @@ const Form = ({onSubmit}) => {
                     name="predecessors" 
                     value={formData.predecessors} 
                     type="text" 
-                    placeholder="predecessors" 
+                    placeholder="e.g:1" 
                 />
             </label>
             <label>Successors:
@@ -68,7 +92,7 @@ const Form = ({onSubmit}) => {
                     name="successors" 
                     value={formData.successors} 
                     type="text" 
-                    placeholder="successors" 
+                    placeholder="e.g:1" 
                 />
             </label>
             <label>Budget:
@@ -77,11 +101,11 @@ const Form = ({onSubmit}) => {
                     name="budget" 
                     value={formData.budget} 
                     type="text"
-                    placeholder="budget" 
+                    placeholder="e.g:1" 
                 />
             </label>
 
-            <button id="FormSubmitButton" type="submit">Add</button>
+            <button id="formSubmitButton" type="submit">Add</button>
         </form>
     )
     
