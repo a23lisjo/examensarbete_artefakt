@@ -1,4 +1,6 @@
 <script>
+    import { onMount } from 'svelte';
+
     let {tRow} = $props()
 
     let wbs = $state("")
@@ -8,6 +10,7 @@
     let successors = $state("")
     let budget = $state("")
 
+
     async function handleSubmit (event) {
         event.preventDefault();
         
@@ -15,23 +18,18 @@
 			method: 'POST',
             headers: {"Content-Type":"application/json"},
 			body: JSON.stringify({
-                wbs,
-                task,
-                duration,
-                predecessors,
-                successors,
-                budget
+                WBS: wbs,
+                Task: task,
+                Duration: duration,
+                Predecessors: predecessors,
+                Successors: successors,
+                Budget: budget
 			})
 		})
 		
 		const jsonData = await res.json();
         tRow (jsonData);
-        console.log( wbs,
-                task,
-                duration,
-                predecessors,
-                successors,
-                budget)
+        //console.log( "returned from JSON-server:", jsonData)
 
         // Rensa formulär
         wbs = ""
@@ -41,19 +39,34 @@
         successors = ""
         budget = ""
 	}
+
+    export function fillForm(data) {
+        wbs = data.WBS;
+        task = data.Task;
+        duration = data.Duration;
+        predecessors = data.Predecessors;
+        successors = data.Successors;
+        budget = data.Budget;
+    }
+
+      onMount(() => {
+        window.__fillForm = fillForm;
+    });
 </script>
 
 <form  onsubmit={handleSubmit}>
     <label>WBS:
         <input 
             bind:value={wbs}
-            type="number" 
+            name="wbs"
+            type="text" 
             placeholder="e.g: 1" 
         />
     </label>
     <label>Task:
         <input 
             bind:value={task}
+            name="task"
             type="text" 
             placeholder="e.g:Supply and Install New Guide Posts" 
         />
@@ -61,28 +74,32 @@
     <label>Duration:
         <input 
             bind:value={duration}
-            type="number" 
+            name="duration"
+            type="text" 
             placeholder="e.g: 2" 
         />
     </label>
     <label>Predecessors:
         <input 
             bind:value={predecessors}
-            type="number" 
+            name="predecessors"
+            type="text" 
             placeholder="e.g:5" 
         />
     </label>
      <label>Successors:
         <input 
             bind:value={successors}
-            type="number" 
+            name="successors"
+            type="text" 
             placeholder="e.g:4" 
         />
     </label>
      <label>Budget:
         <input 
             bind:value={budget}
-            type="number" 
+            name="budget"
+            type="text" 
             placeholder="e.g: 6800" 
         />
     </label>
