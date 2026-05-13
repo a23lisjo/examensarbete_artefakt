@@ -6,7 +6,7 @@ function Project(){
     const [table, setTable] = useState([]);
 
     const handleAdd = (formData) =>{
-        console.log(formData)
+        //console.log(formData)
         setTable([...table,formData])
     }
     useEffect(()=>{
@@ -15,7 +15,7 @@ function Project(){
                 return res.json();
             })
             .then((data)=> {
-                console.log (data)
+                //console.log (data)
                 setTable(data);
             })
             

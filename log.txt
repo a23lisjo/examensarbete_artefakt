@@ -257,3 +257,38 @@ Kommande:
 
 Kommande:
 [x] [SVELTE] Hämta data från JSON fil till tabell
+#############################################################################
+
+--- 14 April 2026 ---
+[BÅDA]
+    - Skapat JSON fil för data som ska användas för applikationerna i Python:
+        import pandas as pd
+        import json
+
+        # Read the Excel file
+        df = pd.read_excel("data1.xlsx", sheet_name='data1')
+
+        # Convert the DataFrame to JSON
+        json_data = df.to_json(orient='records',indent=2)
+
+        # Write the JSON data to a file
+        with open('data1.json', 'w') as f:
+            f.write(json_data)
+
+[REACT]
+    - Lagt till ny data 
+    - Uppdaterat formulär och tabell
+
+Kommande:
+[] [BÅDA] Skapa delete och update för tabellen
+[x] [BÅDA] Lägg till data och uppdatera tabell
+#############################################################################
+
+--- 19 April 2026 ---
+[BÅDA]
+    - Skapat mätscript på tampermonkey
+    - Ändrat kod för både React och Svelte så att mätscriptet ska fungera 
+    - Gjort linjediagram för mätserierna
+
+Kommande:
+[] [BÅDA] Skapa delete och update för tabellen
